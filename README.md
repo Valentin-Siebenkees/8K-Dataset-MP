@@ -4,8 +4,8 @@ Repository which contains scripts for the pipeline and evaluation of a 8K Datase
 - Downscale videos
 (FFmpeg)
 - Calculate Full Reference Metric(s)
-https://github.com/slhck/ffmpeg-quality-metrics
+> https://github.com/slhck/ffmpeg-quality-metrics
 - SI/TI calculation
-https://github.com/VQEG/siti-tools
+> https://github.com/VQEG/siti-tools
 - Dynamic Range utilization
 - Critically Metric
