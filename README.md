@@ -1,5 +1,5 @@
 # 8K-Dataset-MP
-Repository which contains scripts for the pipeline and evaluation of a 8K Dataset
+Repository which contains scripts for the pipeline and evaluation of a 8K resolution Video Dataset
 
 - Downscale videos
 (FFmpeg)
