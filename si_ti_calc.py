@@ -9,8 +9,8 @@ if not exists(result_path):
     makedirs(result_path)
 
 """
-To handle 10-bit input: 
-    --bit-depth 10
+To handle 12-bit input: 
+    --bit-depth 12
     
 To handle "full range" input: 
     --color-range full
@@ -20,6 +20,6 @@ Only HLG or HDR10  encoded HDR input is supported:
     --hdr-mode hdr10
 """
 for clip in listdir(base_path):
-    cmd = f'siti-tools {base_path}/{clip} --bit-depth 10 --color-range full --hdr-mode hlg ' \
+    cmd = f'siti-tools {base_path}/{clip} --bit-depth 12 --color-range full --hdr-mode hlg ' \
           f'> {result_path}/{clip}_si_ti.json'
     subprocess.run(cmd, shell=True)
