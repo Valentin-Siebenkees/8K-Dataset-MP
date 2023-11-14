@@ -9,12 +9,14 @@ output_path = 'E:/Medienprojekt_8K_Datensatz/Output'
 #    - fast_bilinear
 #    - bilinear
 #    - bicubic (Default)
+#    - bicublin
 #    - neighbour
 #    - area
 #    - lanczos
 #    - sinc
 #    - gauss
 #    - spline
+#    - experimental
 downscaling_algorithm = 'neighbour'
 
 if not exists(output_path):
