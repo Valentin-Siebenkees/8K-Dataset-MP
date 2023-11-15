@@ -19,6 +19,7 @@ Repository which contains scripts for the pipeline and evaluation of a 8K resolu
 - $` DR = log_{10} (L_{max} / L_{min} ) `$
 <b>
 where the Lmin and Lmax are the minimum and maximum relative luminance values of the images respectively, computed after excluding 1% of darkest and brightest pixels.
+<b>
 - $` IK = (logL_{avg} - logL_{min}) / (logL_{max} - logL_{min}) `$
 <b>
 where the Lavg is computed as logLavg=Σijlog(L(i,j)+δ)/N, δ is a small value (typically 10−5) used to avoid the singularity occurring for the black pixels, and N is the number of pixels in the L(i,j) image [28]. Both Lmin and Lmax are calculated robustly, after excluding the 1% of the darkest and the brightest pixels, as described in section IV-A1.
