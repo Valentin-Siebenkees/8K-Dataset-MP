@@ -16,7 +16,7 @@ Repository which contains scripts for the pipeline and evaluation of a 8K resolu
 ## Dynamic Range utilization
 - Calculate Pixel-Based Dynamic Range (DR) and Image Key (IK) as they are objective metrics which correlate with perceived dynamic range according to:
 > https://ieeexplore.ieee.org/document/7498953
-- $` DR = log_(10)(L_(max)/L_(min)) `$ 
+- $` DR = log_(10) (L_(max) / L_(min) ) `$ 
 
 ## Coding Research suitability
 - Insect File Size after Compression with different video compression standards
