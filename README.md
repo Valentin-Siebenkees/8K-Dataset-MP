@@ -26,7 +26,7 @@ Repository which contains scripts for the pipeline and evaluation of a 8K resolu
 - Calculating scene criticality and compressibility according to:
 > https://ieeexplore.ieee.org/document/7265973
 ```math
-$ o = log_{10} (mean_{time} (SI(t_n) TI(t_n))) $
+o = log_{10} (mean_{time} (SI(t_n) TI(t_n)))
 ```
 > where SI measures spatial detail, TI measures frame-to-frame image changes, and tn indexes the frames of the video clip
 
