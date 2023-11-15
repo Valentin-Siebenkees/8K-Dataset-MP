@@ -22,11 +22,9 @@ Repository which contains scripts for the pipeline and evaluation of a 8K resolu
 > where the Lavg is computed as logLavg=Σijlog(L(i,j)+δ)/N, <b> δ is a small value (typically 10*e−5) used to avoid the singularity occurring for the black pixels, and N is the number of pixels in the L(i,j) image. Both Lmin and Lmax are calculated robustly, after excluding the 1% of the darkest and the brightest pixels.
 
 ## Coding Research suitability
+- Inspect File Size after Compression with different video compression standards
 - Calculating scene criticality and compressibility according to:
 > https://ieeexplore.ieee.org/document/7265973 
-- $` o = log_{10} (mean_{time} (SI(t_n) TI(t_n))) `$
-> where SI measures spatial detail, TI measures frame-to-frame image changes, and tn indexes the frames of the video clip
-
 
 ## Aesthetics and appeal
 - Calculate Aesthetics and appeal using Neural Image Assessment (NIMA)
