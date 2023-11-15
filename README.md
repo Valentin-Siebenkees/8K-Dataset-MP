@@ -24,10 +24,9 @@ Repository which contains scripts for the pipeline and evaluation of a 8K resolu
 ## Coding Research suitability
 - Inspect File Size after Compression with different video compression standards
 - Calculating scene criticality and compressibility according to:
-> https://ieeexplore.ieee.org/document/7265973
-- $` CRIT = log_{10} `$ 
+> https://ieeexplore.ieee.org/document/7265973 
 - $` o = log_{10} \bullet (mean_{time} \bullet (SI(t_n) \bullet TI(t_n))) `$
-> where SI measures spatial detail, TI measures frame-to-frame image changes, and tn indexes the frames of the video clip
+
 
 ## Aesthetics and appeal
 - Calculate Aesthetics and appeal using Neural Image Assessment (NIMA)
