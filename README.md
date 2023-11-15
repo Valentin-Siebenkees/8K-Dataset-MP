@@ -25,6 +25,7 @@ Repository which contains scripts for the pipeline and evaluation of a 8K resolu
 - Inspect File Size after Compression with different video compression standards
 - Calculating scene criticality and compressibility according to:
 > https://ieeexplore.ieee.org/document/7265973
+- $` log_{10} `$
 
 ## Aesthetics and appeal
 - Calculate Aesthetics and appeal using Neural Image Assessment (NIMA)
