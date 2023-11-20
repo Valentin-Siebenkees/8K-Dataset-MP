@@ -2,7 +2,7 @@
 Repository which contains scripts for the pipeline and evaluation of a 8K resolution Video Dataset
 
 ## Downscale videos
-- Downscale the videos using FFmpeg and nearest neighbour scaling
+- Downscale the videos using FFmpeg and lanczos scaling
 > https://www.ffmpeg.org/
 
 ## Calculate Full Reference Metric(s)
