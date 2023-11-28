@@ -2,6 +2,7 @@ from os import listdir, makedirs
 from os.path import exists
 from skvideo.io import vread, FFmpegReader
 import numpy as np
+import time
 
 video_directory = f'E:/Medienprojekt_8K_Datensatz/Export'
 
@@ -12,8 +13,10 @@ video_directory = f'E:/Medienprojekt_8K_Datensatz/Export'
 #   900 frames x 4320 x 8192 x 1 Channel (Y) [uint8] = 31.850.496.000 Bytes
 #   31.850.496.000 / 1024**3 = 29,7 GiB
 
-lower_percentile = 10
+lower_percentile = 1
 upper_percentile = 99
+
+start = time.time()
 
 for video in listdir(video_directory):
     (frame_number, _, _, _) = FFmpegReader(f'{video_directory}/{video}').getShape()
@@ -24,3 +27,7 @@ for video in listdir(video_directory):
         IK = (np.log(np.mean(frame)) - np.log(np.percentile(frame, lower_percentile))) / \
              (np.log(np.percentile(frame, upper_percentile)) - np.log(np.percentile(frame, lower_percentile)))
         print(f'Frame: {frame_number} DR={DR}, IK={IK}')
+
+end = time.time()
+
+print(f'Execution time: {end - start} seconds')
